@@ -25,7 +25,7 @@ SECRET_KEY = 'w6rnqz8c=ge^+l6%96yn1)(o@1kya@%)8z45w#%i*h+z^)p3bb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'tlex.pythonanywhere.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [u'tlex.pythonanywhere.com']
 
 
 # Application definition
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp'
 ]
 
 MIDDLEWARE = [
