@@ -4,9 +4,6 @@ from urllib.parse import parse_qsl
 from .models import Service
 
 # Create your views here.
-def home(req):
-    return render(req, 'myapp/home.html')
-
 def index(req):
     if req.method == 'POST':
         post = req.POST
@@ -16,7 +13,7 @@ def index(req):
         s.detail = post['detail']
         s.save()
         services = Service.objects.all()
-        print(services)
+        print(index)
         return render(req, 'myapp/index.html', { 'services': services })
     else:
         print('ร้องขอทำมะดา')

@@ -25,7 +25,6 @@
   </head>
   <body>
     <br>
-    <br>
     <div class="container">
         <div class="card text-center">
             <div class="card-header">
@@ -62,7 +61,6 @@
                 <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModalCenter">
                     View Data
                   </button>
-                <a class="btn btn-outline-danger" type="" href="home">Go Home</a>
               </form>
             </div>
             <!-- Button trigger modal -->
@@ -80,25 +78,14 @@
                         </div>
                         <div class="modal-body">
                           <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>Icon</th>
-                                    <th>Title</th>
-                                    <th>Detail</th>
-                                  </tr>
-                                  {% for s in index %}
-                                  <tr>
-                                    <td> <i class="fa {{s.icon}}"></i> {{ s.icon }}</td>
-                                    <td>{{ s.title }}</td>
-                                    <td>{{ s.detail }}</td>
-                                  </tr>
-                                  {% endfor %}
+                            <thead class="thed-dark">
+
                             </thead>
                           </table>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                          <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                       </div>
                     </div>
@@ -120,7 +107,7 @@
           <div class="spacing"><button style="padding: 2em;" type="submit">Submit</button></div>
         </form>
       </section> -->
-      <!-- <div>
+      <div>
        <table style="width:80%; border: 1px solid black; padding: 1em;">
         <tr>
           <th>Icon</th>
@@ -135,11 +122,10 @@
         </tr>
         {% endfor %}
       </table> 
-      </div> -->
+      </div>
     </div>
-    <br>
     <footer>
-      <div class="text-center">
+      <div>
         <div>Copyright &copy; 2019 </div>
       </div>
     </footer>
